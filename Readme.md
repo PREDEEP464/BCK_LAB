@@ -70,7 +70,7 @@ BCK_LAB/
 
 ## Experiments Overview
 
-- **Exp1**: Merkle Tree-Based Verifi cation System
+- **Exp1**: Merkle Tree-Based Verification System
 - **Exp2**: Custom Blockchain Architecture
 - **Exp3**: Functional Blockchain Prototype
 - **Exp4**: Blockchain With Consensus Mechanism

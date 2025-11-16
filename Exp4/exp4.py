@@ -1,3 +1,5 @@
+# Blockchain With Consensus Mechanism
+
 import hashlib
 import json
 import time
@@ -24,7 +26,7 @@ class Block:
         nonce = 0
         while True:
             h = self.compute_hash(nonce)
-            if h.startswith(difficulty):   # Proof-of-Work condition
+            if h.startswith(difficulty):   
                 return nonce, h
             nonce += 1
 
@@ -65,19 +67,16 @@ def consensus(chains):
 
 
 if __name__ == "__main__":
-    # Simulating 3 nodes
+
     node1 = Blockchain()
     node2 = Blockchain()
     node3 = Blockchain()
 
-    # Node 1 builds a longer chain
     node1.add_block(["A pays B 5"])
     node1.add_block(["C pays D 7"])
 
-    # Node 2 builds a smaller chain
     node2.add_block(["X pays Y 10"])
 
-    # Node 3 builds a different smaller chain
     node3.add_block(["M pays N 2"])
     node3.add_block(["N pays O 4"])
 
@@ -86,7 +85,6 @@ if __name__ == "__main__":
     print("Node2 chain length:", len(node2.chain))
     print("Node3 chain length:", len(node3.chain))
 
-    # Apply consensus
     consensus([node1, node2, node3])
 
     print("\nAfter Consensus:")

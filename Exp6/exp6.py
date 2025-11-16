@@ -1,3 +1,5 @@
+# Smart Contract–Based Voting System
+
 import hashlib
 import json
 import time
@@ -50,7 +52,7 @@ if __name__ == "__main__":
     vc.add_vote("V001", "Alice")
     vc.add_vote("V002", "Bob")
     vc.add_vote("V003", "Alice")
-    vc.add_vote("V001", "Alice")  # duplicate vote attempt
+    vc.add_vote("V001", "Alice") 
 
     print("\nFinal Tally:", vc.tally_votes())
     print("Blockchain length:", len(vc.chain))

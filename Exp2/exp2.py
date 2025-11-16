@@ -1,3 +1,5 @@
+# Custom Blockchain Architecture
+
 import time
 import json
 import hashlib

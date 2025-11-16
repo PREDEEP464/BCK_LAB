@@ -1,4 +1,4 @@
-# merkle_demo.py - Merkle Tree (SHA-256)
+# Merkle Tree-Based Verification System
 
 import os, hashlib, sys 
 
@@ -10,7 +10,6 @@ def file_hash(path: str) -> str:
         return sha256_hex(f.read())
 
 def merkle_layer(hashes):
-    # If odd, duplicate last
     if len(hashes) % 2 == 1:
         hashes = hashes + [hashes[-1]]
     parent = []
@@ -26,13 +25,12 @@ def build_merkle_tree(file_paths):
     while len(layer) > 1:
         layer = merkle_layer(layer)
         tree.append(layer)
-    return tree  # bottom-up layers, tree[-1][0] is root
+    return tree 
 
 def merkle_proof(tree, index):
     proof = []
     idx = index
     for layer in tree[:-1]:
-        # sibling index
         if idx % 2 == 0:
             sib = idx + 1 if idx + 1 < len(layer) else idx
         else:
@@ -66,7 +64,6 @@ if __name__ == "__main__":
 
     print("\nRoot hash:", root)
 
-    # Proof for second file (index 1)
     proof = merkle_proof(tree, 1)
     print("\nProof for index 1:", proof)
 

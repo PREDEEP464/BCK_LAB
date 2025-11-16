@@ -1,3 +1,5 @@
+# Functional Blockchain Prototype
+
 import hashlib
 import json
 import time
@@ -24,7 +26,7 @@ class Block:
         nonce = 0
         while True:
             h = self.compute_hash(nonce)
-            if h.startswith("0000"):      # proof-of-work condition
+            if h.startswith("0000"):     
                 return nonce, h
             nonce += 1
 
@@ -49,7 +51,7 @@ class Blockchain:
     def add_block(self):
         new_block = Block(len(self.chain), self.pending_transactions, self.chain[-1].hash)
         self.chain.append(new_block)
-        self.pending_transactions = []  # clear pool
+        self.pending_transactions = []  
         return new_block
 
 
