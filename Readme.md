@@ -8,13 +8,13 @@ This repository contains experiments and implementations related to blockchain t
 
 Open VS Code → Terminal and run:
 
-```bash
+```powershell
 git clone https://github.com/PREDEEP464/BCK_LAB.git
 ```
 
 Open the cloned folder in VS Code:
 
-```bash
+```powershell
 cd BCK_LAB
 ```
 
@@ -22,13 +22,13 @@ cd BCK_LAB
 
 Delete the `.git` folder to remove all version control:
 
-```bash
-rm -rf .git
+```powershell
+Remove-Item -Recurse -Force .git
 ```
 
 Verify Git has been removed:
 
-```bash
+```powershell
 git status
 ```
 
@@ -41,13 +41,13 @@ fatal: not a git repository
 
 Navigate to the experiment folder:
 
-```bash
+```powershell
 cd ExperimentX
 ```
 
 Run the Python file:
 
-```bash
+```powershell
 python experimentX.py
 ```
 
@@ -57,7 +57,7 @@ python experimentX.py
 
 Make sure dependencies are installed:
 
-```bash
+```powershell
 pip install ecdsa
 ```
 
