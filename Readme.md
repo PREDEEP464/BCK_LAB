@@ -37,23 +37,7 @@ git status
 fatal: not a git repository
 ```
 
-### 3. Execute Files
-
-Navigate to the experiment folder:
-
-```powershell
-cd ExperimentX
-```
-
-Run the Python file:
-
-```powershell
-python experimentX.py
-```
-
-*(Replace X with the experiment number you want to execute.)*
-
-### 4. Install Dependencies
+### 3. Install Dependencies
 
 Make sure dependencies are installed:
 
@@ -86,30 +70,9 @@ BCK_LAB/
 
 ## Experiments Overview
 
-- **Exp1**: Merkle Tree implementation with SHA-256 hashing
-- **Exp2**: [Add description]
-- **Exp3**: [Add description]
-- **Exp4**: [Add description]
-- **Exp5**: [Add description]
-- **Exp6**: [Add description]
-
-## Requirements
-
-- Python 3.x
-- Required packages:
-  - `ecdsa`
-  - `hashlib` (built-in)
-  - `os` (built-in)
-
-## Usage
-
-1. Follow the setup instructions above
-2. Navigate to the desired experiment folder
-3. Run the corresponding Python file
-4. Follow any additional instructions provided in the experiment
-
-## Notes
-
-- Ensure you have Python installed on your system
-- Install any missing dependencies using `pip install <package-name>`
-- Each experiment folder contains its own implementation and test files
+- **Exp1**: Merkle Tree-Based Verifi cation System
+- **Exp2**: Custom Blockchain Architecture
+- **Exp3**: Functional Blockchain Prototype
+- **Exp4**: Blockchain With Consensus Mechanism
+- **Exp5**: Decentralized Cryptocurrency Wallet
+- **Exp6**: Smart Contract–Based Voting System
