@@ -1,0 +1,1 @@
+This is file 3. Merkle Trees help verify data integrity in blockchains.
