@@ -37,24 +37,12 @@ git status
 fatal: not a git repository
 ```
 
-### 3. Install Dependencies
-
-Make sure dependencies are installed:
-
-```powershell
-pip install ecdsa
-```
-
-## Repository Structure
+### 3. Repository Structure
 
 ```
 BCK_LAB/
 ├── Exp1/
-│   ├── exp1.py
-│   └── sample_files/
-│       ├── file2.txt
-│       ├── file3.txt
-│       └── file4.txt
+│   └── exp1.py
 ├── Exp2/
 │   └── exp2.py
 ├── Exp3/
@@ -65,14 +53,17 @@ BCK_LAB/
 │   └── exp5.py
 ├── Exp6/
 │   └── exp6.py
-└── README.md
+├── sample_files/
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
 ```
 
 ## Experiments Overview
 
-- **Exp1**: Merkle Tree-Based Verification System
-- **Exp2**: Custom Blockchain Architecture
-- **Exp3**: Functional Blockchain Prototype
-- **Exp4**: Blockchain With Consensus Mechanism
-- **Exp5**: Decentralized Cryptocurrency Wallet
-- **Exp6**: Smart Contract–Based Voting System
+- **Exp1**: Merkle Tree implementation (SHA-256) 
+- **Exp2**: Digital Signatures with ECDSA 
+- **Exp3**: Blockchain implementation 
+- **Exp4**: Proof of Work blockchain 
+- **Exp5**: Cryptographic key generation 
+- **Exp6**: Advanced blockchain features 
