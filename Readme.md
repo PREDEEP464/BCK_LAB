@@ -2,6 +2,17 @@
 
 This repository contains experiments and implementations related to blockchain technology and cryptographic concepts.
 
+
+## Experiments Overview
+
+- **Exp1**: Merkle Tree implementation (SHA-256) 
+- **Exp2**: Digital Signatures with ECDSA 
+- **Exp3**: Blockchain implementation 
+- **Exp4**: Proof of Work blockchain 
+- **Exp5**: Cryptographic key generation 
+- **Exp6**: Advanced blockchain features 
+
+
 ## Setup Instructions
 
 ### 1. Clone the Repository
@@ -57,13 +68,5 @@ BCK_LAB/
 │   ├── file2.txt
 │   ├── file3.txt
 │   └── file4.txt
+├── Readme.md
 ```
-
-## Experiments Overview
-
-- **Exp1**: Merkle Tree implementation (SHA-256) 
-- **Exp2**: Digital Signatures with ECDSA 
-- **Exp3**: Blockchain implementation 
-- **Exp4**: Proof of Work blockchain 
-- **Exp5**: Cryptographic key generation 
-- **Exp6**: Advanced blockchain features 
